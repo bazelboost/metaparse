@@ -8,6 +8,14 @@ http_archive(
 )
 
 http_archive(
+	name = "com_github_bazelboost_preprocessor",
+	strip_prefix = "preprocessor-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/preprocessor/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
 	name = "com_github_bazelboost_mpl",
 	strip_prefix = "mpl-boost-1.65.1",
 	urls = [
@@ -24,9 +32,9 @@ http_archive(
 )
 
 http_archive(
-	name = "com_github_bazelboost_predef",
-	strip_prefix = "predef-boost-1.65.1",
+	name = "com_github_bazelboost_type_traits",
+	strip_prefix = "type_traits-boost-1.65.1",
 	urls = [
-		"https://github.com/bazelboost/predef/archive/boost-1.65.1.tar.gz"
+		"https://github.com/bazelboost/type_traits/archive/boost-1.65.1.tar.gz"
 	],
 )
